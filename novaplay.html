@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaPlay - SpaceQuiz</title>
+  <link rel="icon" href="NOVAPLAY LOGO-03.png" type="image/png" />
+  <link rel="stylesheet" href="novaplay.css" />
+  <script src="novaplay.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="NOVAPLAY LOGO-02.png" alt="NovaPlay Logo" class="logo" />
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <video autoplay muted loop playsinline class="bg-video">
+      <source src="13201655_3840_2160_24fps.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-text">
+      <h1 class="maintext">Launch Your Brain</h1>
+      <h1 class="secondtext">With NovaPlay</h1>
+      <button id="scrollBtn">Start the Mission</button>
+    </div>
+    
+  </section>
+
+  <!-- Quiz Section -->
+  
+<section class="quiz-section">
+  <h2 class="quiz-title">Ready to Challenge Your Brain?</h2>
+  <div class="quiz-container" id="quiz-container">
+    <!-- Quiz cards will be inserted by JS -->
+  </div>
+  
+  <div id="quiz-area" class="quiz-area hidden">
+    <div id="question-container"></div>
+    <div id="answer-buttons"></div>
+    <button id="next-button" class="hidden">Next</button>
+  </div>
+
+  <div class="quiz-controls hidden" id="quiz-controls">
+    <button id="prevQuiz" disabled>Previous Quiz</button>
+    <button id="nextQuiz">Next Quiz</button>
+  </div>
+
+</section>
+
+<!--quiz result-->
+<section id="result-section" style="display: none;">
+  <div id="quiz-results"></div>
+</section>
+
+<!--Additional Features section-->
+<section id="additional">
+  <div class="image-container">
+    <img src="BACKGROUND-01-01-01.jpg" class="bg-image" alt="Background">
+  </div>
+</section>
+
+<!--FOOTER-->
+  <footer>
+    <p id="copyright">&copy; 2025 NovaPlay. All rights reserved.</p> 
+  </footer>
+
+</body>
+</html>
